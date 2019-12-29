@@ -4,24 +4,38 @@
   android:layout_height="match_parent"
   android:orientation="vertical">
 
-  <EditText
-    android:id="@+id/username"
+  <com.google.android.material.textfield.TextInputLayout
+    android:hint="Username"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="username" />
+    android:layout_height="wrap_content">
 
-  <EditText
-    android:id="@+id/password"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:inputType="textPassword"
-    android:text="password" />
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/username"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+  </com.google.android.material.textfield.TextInputLayout>
 
-  <EditText
-    android:id="@+id/url"
+  <com.google.android.material.textfield.TextInputLayout
+    android:hint="Password"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="url" />
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:hint="URL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/url"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+  </com.google.android.material.textfield.TextInputLayout>
 
   <Button
     android:id="@+id/saveButton"
