@@ -19,9 +19,10 @@ class SettingsActivity : Activity() {
 
     }
 
-    fun save() {
+    private fun save() {
         store.username = username.text.toString()
         store.password = password.text.toString()
+        finish()
     }
 
 }
